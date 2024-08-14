@@ -14,7 +14,7 @@ if [ $(id -u) -ne 0 ]
 fi
 
 # Go to the temp folder
-cd /tmp
+sh -c 'cd /tmp'
 
 # Download the latest Discord source archive
 echo "Dowload files ..."
@@ -30,4 +30,4 @@ rm $SOURCE_FILE
 
 # Go back
 echo "Done"
-cd ..
+sh -c 'cd ..'
